@@ -1,0 +1,3 @@
+[submodule "ref/shuvarie"]
+	path = ref/shuvarie
+	url = https://github.com/shuvarie/shuvarie.git
