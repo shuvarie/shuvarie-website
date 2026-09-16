@@ -17,8 +17,13 @@ plugins:
 
 # just-the-docs theme settings
 # https://just-the-docs.com/docs/configuration/
-just_the_docs:
-  color_scheme: dark
+#
+# Auto color scheme: the theme's `color_scheme` only supports "light" and
+# "dark" (there is no "auto" value). To follow the visitor's system
+# preference, the light scheme stays the default and
+# _includes/head_custom.html links the theme's full dark stylesheet with
+# media="(prefers-color-scheme: dark)", which cascades over the light one.
+color_scheme: light
 
 search_enabled:
   enabled: true
