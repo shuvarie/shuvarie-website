@@ -1,0 +1,26 @@
+---
+layout: page
+title: Sessions
+parent: Usage
+nav_order: 4
+permalink: /docs/usage/sessions/
+---
+
+Sessions live in an embedded SQLite database at `<project>/.shuvarie/`
+(auto-gitignored; `--dir` relocates it). A session is created by your first
+prompt — titled from it — and every message, tool call and scroll position
+is persisted immediately, so killing the terminal loses nothing.
+
+- **Resume** with `shuvarie -c`, `shuvarie -s <UUID>`, or `/sessions`
+  (<kbd>Enter</kbd> resume, <kbd>N</kbd> new, <kbd>Ctrl+D</kbd> delete with
+  confirmation).
+- **One knight per horse**: a session locks while it is open elsewhere, and
+  the picker marks it *in use*.
+- **History is a tree.** `/undo` forks before the last prompt, `/replay`
+  forks and re-runs it, and `/tree` walks the whole tree — <kbd>Enter</kbd>
+  forks from a node, `s` summarizes the forked-away prefix, `d` deletes a
+  branch (confirmed). Files on disk are never reverted.
+- **Export / import.** `/export [path]` (or `--export-session [FILE]`)
+  writes a self-contained JSON snapshot; `--import-session <FILE>` restores
+  one. [Embeddings](/docs/configuration/providers/) are regenerated on
+  import.

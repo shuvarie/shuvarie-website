@@ -2,5 +2,7 @@ permissions {
   paths {
     allow ".gitignore" ".gitattributes" ".gitmodules"
     allow ".jekyll-cache"
+    allow ".agents/"
+    allow "ref/"
   }
 }

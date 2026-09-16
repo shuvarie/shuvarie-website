@@ -45,8 +45,7 @@ decision — all under explicit, granular permissions you control.
   <div class="feature">
     <h3>🎨 Scenes &amp; themes</h3>
     <p>Drop-in <code>scene.d</code> and <code>themes.d</code> files change how
-    Shuvarie looks and behaves; switch live with <code>/scene</code> and
-    <code>/theme</code>.</p>
+    Shuvarie looks and behaves; switch live with <code>/scene</code>.</p>
   </div>
   <div class="feature">
     <h3>🛡️ Permissions &amp; trust</h3>
@@ -55,8 +54,8 @@ decision — all under explicit, granular permissions you control.
   </div>
   <div class="feature">
     <h3>⌨️ Keyboard-first</h3>
-    <p>Every action has a keybinding, and every keybinding is configurable
-    in <code>config.kdl</code>.</p>
+    <p>Every action has a keybinding, and <code>Ctrl+M</code> puts every
+    command one keystroke away.</p>
   </div>
 </div>
 
