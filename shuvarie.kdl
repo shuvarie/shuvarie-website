@@ -1,0 +1,6 @@
+permissions {
+  paths {
+    allow ".gitignore" ".gitattributes" ".gitmodules"
+    allow ".jekyll-cache"
+  }
+}
